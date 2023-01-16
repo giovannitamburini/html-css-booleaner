@@ -4,9 +4,19 @@ body{
     margin: 0px;
 }
 
+main, footer, h1, #logo, #autore {
+    margin-left: 11px;
+}
+
+ul {
+    padding-left: 11px;
+
+}
 p {
     margin-bottom: 30px;
 }
+
+
 
 #logo{
     height: 45%;
@@ -19,6 +29,7 @@ p {
     background-size: ;
     background-repeat: repeat;
     background-color: #50A0FF;
+    margin-left: 0px;
 }
 
 h1 {
@@ -63,3 +74,14 @@ thead {
     width: 50%;
 }
 
+#interest {
+    color: #A9A9A9;
+    font-size: large;
+    font-weight: 700;
+}
+
+.img-footer {
+    height: 150px;
+    margin-top: 17px;
+
+}
