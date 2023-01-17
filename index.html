@@ -1,108 +1,140 @@
 <!DOCTYPE html>
 <html lang="it">
+  
  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>The Booleaner</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Booleaner</title>
+
+  <link rel="stylesheet" href="css/style.css">
  </head>
 
-
  <body>
-    <!-- header: logo, titolo e autore -->
+  <!-- nav -->
+  <nav>
+    <img src="img/logo.svg" alt="logo the booleaner">
+  </nav>
+  <!-- /nav -->
+
+  <main>
+    <!-- header -->
     <header>
-        <div id="header-parte-1">
-            <img id="logo" src="img/logo.svg" alt="The Booleaner">
-        </div>
-
-        <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
-        
-        <div id="autore">
-            <span id="autore-1">Scritto da</span>
-            <span id="autore-2">The Booleaner</span>
-            <div id="data">il 10/10/2020</div>
-        </div>
+      <h1>
+        Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee
+      </h1>
+      <div id="header-author" class="grey-text">
+        Scritto da <a href="#">The Booleaner</a>
+      </div>
+      <div id="header-date" class="grey-text">
+        il 17/01/2023
+      </div>
     </header>
-    <!-- /header: logo, titolo e autore -->
+    <!-- /header -->
 
-    <!-- corpo centrale: immagini, paragrafo e ul, table, paragrafo -->
-    <main>
 
-        <!-- immagini -->
-        <section>
-            <img src="img/tim-1.jpg" alt="tim-1">
-            <img src="img/tim-2.jpg" alt="tim-2">
-            <div>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</div>
-            <div>2nd Photo: Wikimedia, by Paul Clarke</div>
-        </section>
-        <!-- /immagini -->
+    <!-- pre-article -->
+    <section id="pre-article">
+      <figure>
+        <img src="img/tim-1.jpg" alt="Tim Berners-Lee 1">
+        <img src="img/tim-2.jpg" alt="Tim Berners-Lee 2">
 
-        <!-- paragrafo e unordered list -->
-        <section>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="yellow"> Laboriosam, velit impedit.</span> Delectus officiis consectetur nisi ea, in esse optio architecto necessitatibus odio eligendi praesentium dolorem rem non eos. Voluptatem, esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia, numquam molestiae expedita eaque porro esse, deserunt iste qui laudantium sunt eligendi ipsam, autem sed. Magnam ipsam maiores ratione nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum vero quia minus enim tempora. Et suscipit assumenda voluptates officia minus, harum expedita quam, voluptate ea libero odio obcaecati ducimus!</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque harum dolor reprehenderit voluptate quos, quia a. Unde ipsa voluptatum voluptatibus explicabo, excepturi.</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, odit repudiandae tempora quam tenetur enim dolore omnis eaque quasi culpa eveniet.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos sequi dicta unde dolorum, fugit iure, sed ullam, reiciendis voluptate officia. Iste, dolor soluta..</li>
-            </ul>
-        </section>
-        <!-- /paragrafo e unordered list -->
+        <figcaption>
+          1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen <br>
+          2nd Photo: Wikimedia, by Paul Clarke
+        </figcaption>
+      </figure>
+    </section>
+    <!-- /pre-article -->
 
-        <!-- tabella -->
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Lorem ipsum dolor</th>
-                        <th>Lorem ipsum dolor</th>
-                        <th class="cella">Lorem ipsum dolor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="riga-azzurra">
-                        <td>Lorem ipsum dolor</td>
-                        <td>Lorem ipsum dolor</td>
-                        <td class="cella"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos veniam eligendi a animi modi, ratione voluptatum nisi? Ullam laboriosam laborum dolores reprehenderit officia molestias perspiciatis sequi sunt minima voluptates.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor</td>
-                        <td>Lorem ipsum dolor</td>
-                        <td class="cella"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos veniam eligendi a animi modi, ratione voluptatum nisi? Ullam laboriosam laborum dolores reprehenderit officia molestias perspiciatis sequi sunt minima voluptates.</td>
-                    </tr>
-                    <tr class="riga-azzurra">
-                        <td>Lorem ipsum dolor</td>
-                        <td>Lorem ipsum dolor</td>
-                        <td class="cella"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos veniam eligendi a animi modi, ratione voluptatum nisi? Ullam laboriosam laborum dolores reprehenderit officia molestias perspiciatis sequi sunt minima voluptates.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <!-- /tabella -->
+    <section>
+      <p>
+        Lorem ipsum dolor <mark>sit amet consectetur adipisicing elit</mark>. Facilis porro vel temporibus incidunt.
+        Suscipit, saepe dignissimos quo dolores hic veritatis autem odio? Repellat fuga quia in distinctio consectetur
+        magnam quidem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight">Facilis porro vel temporibus
+          incidunt</span>. Suscipit, saepe dignissimos quo dolores hic veritatis autem odio? Repellat fuga quia in
+        distinctio consectetur magnam quidem?
+      </p>
+    </section>
 
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates! <span class="yellow">Quod vel saepe facere qui repellat corporis quis?</span>  Porro commodi veniam voluptatum voluptatibus unde mollitia, facilis laborum vel hic ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum eligendi facere voluptatem vitae dolor quam nesciunt dolorem amet repellat, eos magni veniam in nam fugiat aliquam reiciendis cumque aperiam placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda suscipit nobis veniam. Magnam tempora maiores, culpa sint perferendis debitis eum. Maxime quasi quis minima commodi nesciunt veritatis, totam hic!</p>
-        </section>
-    </main>
-    <!-- /corpo centrale: immagini, paragrafo e ul, table, paragrafo -->
+    <section>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio harum dolorum exercitationem laborum
+          recusandae, natus nisi quasi hic iusto reiciendis necessitatibus quo qui ratione blanditiis esse quae earum!
+          Amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio harum dolorum exercitationem laborum
+          recusandae, natus nisi quasi hic iusto reiciendis necessitatibus quo qui ratione blanditiis esse quae earum!
+          Amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio harum dolorum exercitationem laborum
+          recusandae, natus nisi quasi hic iusto reiciendis necessitatibus quo qui ratione blanditiis esse quae earum!
+          Amet.</li>
+      </ul>
+    </section>
 
-    <!-- footer: immagini -->
-    <footer>
-        <div id="interest">
-            Potrebbe interessarti
-        </div>
-        <!-- <div>  
-            <img class="img-footer" src="img/monitor.jpg" alt="monitor">
-        </div>    
-        <div>
-            <img class="img-footer" src="img/graph.jpg" alt="graph">    
-        </div> -->
-        <div id="container-1">lorem ipusm dolor</div>
-        <div id="container-2">lorem ipusm dolor</div>
-    </footer>
+    <!-- table -->
+    <section id="table">
 
-        
-    <!-- /footer: immagini -->
+      <table>
+        <thead>
+          <tr>
+            <th>lorem ipsum</th>
+            <th>lorem ipsum</th>
+            <th id="half-width">lorem ipsum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="back-blue">
+            <td>lorem ipsum</td>
+            <td>lorem ipsum</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repellat alias quae maxime ad
+              possimus, veniam dolores neque mollitia in porro? Libero laborum vitae mollitia asperiores, odit eum
+              cupiditate sint.</td>
+          </tr>
+          <tr>
+            <td>lorem ipsum</td>
+            <td>lorem ipsum</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repellat alias quae maxime ad
+              possimus, veniam dolores neque mollitia in porro? Libero laborum vitae mollitia asperiores, odit eum
+              cupiditate sint.</td>
+          </tr>
+          <tr class="back-blue">
+            <td>lorem ipsum</td>
+            <td>lorem ipsum</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repellat alias quae maxime ad
+              possimus, veniam dolores neque mollitia in porro? Libero laborum vitae mollitia asperiores, odit eum
+              cupiditate sint.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <!-- /table -->
+
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad, alias perferendis laborum in cupiditate
+        maiores autem sed, exercitationem harum dolor. Corrupti, eius dignissimos atque vel ipsum aliquam placeat
+        consequuntur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark>Fugiat ad, alias perferendis laborum in
+          cupiditate maiores</mark> autem sed, exercitationem harum dolor. Corrupti, eius dignissimos atque vel ipsum
+        aliquam placeat consequuntur.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <h2 class="grey-text">
+      Potrebbe interessarti
+    </h2>
+
+    <div id="footer-image-1" class="footer-image">
+      Lorem ipsum dolor
+    </div>
+    <div id="footer-image-2" class="footer-image">
+      Lorem ipsum dolor
+    </div>
+  </footer>
 
  </body>
 
